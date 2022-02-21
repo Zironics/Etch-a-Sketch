@@ -44,6 +44,7 @@ const createGrid = q =>{
       divs=document.querySelectorAll('.item');
       listen();
       setBackground(backGroundColor);
+      line.classList.remove('active');
 };
 
 function toggleLines()
