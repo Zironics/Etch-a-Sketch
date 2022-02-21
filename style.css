@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html,body{
+    margin: 0;
+    background-color: #181519;
+}
+
+
+.header{
+    font-family: 'Press Start 2P',cursive;
+    padding: 16px;
+    font-size: 32px;
+    text-align: center;
+    background-color: #352F37;
+    color: red;
+    margin-bottom: 30px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    flex:1;
+    padding: 36px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:16px;
+    padding: 36px;
+    background-color:#352F37;
+    border-radius: 8px;
+    color:white;
+}
+
+.grid-container{
+    padding: 8px;
+    background-color: #352F37;
+    border-radius: 8px;
+}
+
+.grid{
+    display: grid;  
+    width: 600px;
+    height: 500px;
+}
+
+button{
+    border: solid 2px rgb(77, 221, 209);
+    padding:8px 16px;
+    color:white;
+    background-color: #272727;
+}
+
+button:active{
+    background-color: rgb(77, 221, 209);
+}
+
+.color-container{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    color:white;
+}
+
+input[type='number']{
+    padding:8px 16px;
+    border: solid 2px rgb(77, 221, 209);
+    color:white;
+    background-color: #272727;
+}
+
+input[type='number']:focus{
+    outline: none;
+}
+
+
+.active{
+    background-color: rgb(77, 221, 209) ;
+}
+
+input[type=color]{
+	width: 70px;
+	height: 40px;
+	border: none;
+	background: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: solid 1px rgb(77, 221, 209);
+}
+
+.color{
+    border: 0px;
+    padding: 0px;
+}
