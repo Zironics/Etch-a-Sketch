@@ -81,6 +81,10 @@ input[type='number']:focus{
     outline: none;
 }
 
+div.lines{
+      border: 1px solid grey;
+}
+
 
 .active{
     background-color: rgb(77, 221, 209) ;

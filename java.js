@@ -4,6 +4,7 @@ let backGroundColor="#ffffff";
 let backgroundSelector=document.getElementById('background');
 let eraser=document.querySelector('.eraser');
 let size=document.querySelector('#size');
+let line=document.querySelector('.lines');
 let n=parseInt(size.value);
 let colorSelector=document.getElementById('select');
 let color=colorSelector.value;
@@ -11,6 +12,7 @@ let divs;
 let fill=false;
 let erase=false;
 let mousedown=false;
+
 
 colorSelector.addEventListener("change",function(){
     color=colorSelector.value;
@@ -43,6 +45,13 @@ const createGrid = q =>{
       listen();
       setBackground(backGroundColor);
 };
+
+function toggleLines()
+{
+    divs.forEach(element => {
+        element.classList.toggle('lines');
+    });
+}
 
 createGrid(n);
 
@@ -77,6 +86,11 @@ grid.addEventListener('mousedown',function(){
 grid.addEventListener("mouseup",function()
 {
    fill=false;
+});
+
+line.addEventListener('click',function(){
+     line.classList.toggle('active');
+     toggleLines();
 });
 
 
