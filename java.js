@@ -70,9 +70,9 @@ backgroundSelector.addEventListener('change',function(){
 });
 
 size.addEventListener('change',function(e){
-    if(e.target.value>99) 
+    if(e.target.value>99 || e.target.value<1) 
     {
-        alert("The grid cannot be bigger then 99*99");
+        alert("Error the number you entered cannot be accepted, respect the range [1-99]");
         return;
     }
     n=parseInt(e.target.value);
